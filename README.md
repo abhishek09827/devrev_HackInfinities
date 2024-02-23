@@ -21,13 +21,13 @@ Analyze AI is a comprehensive tool designed to analyze and process data gathered
    /insights --tags="[Category]"
      ```
 - *Trend Analysis*: Helps identify emerging topics or discussions within the Twitter and Instagram communities related to OpenAI.
-      ```bash
+   ```bash
    /trends
-      ```
+    ```
 - *Data Lookup*: Enables targeted searches to gather information about specific topics, such as new features or product launches.
-      ```bash
-   /on_ticket_
-      ```
+   ```bash
+   /on_ticket_extract --[keyword]
+   ```
 
   ### *Dashboard*: https://devrev.streamlit.app/
 
