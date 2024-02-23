@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target": "es2016",
+    "module": "commonjs",
+    "baseUrl": "./",
+    "paths": {
+      "*": ["./src/*"]
+    },
+    "outDir": "./dist",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "declaration": true,
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "noImplicitOverride": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true
+  },
+  "include": [
+    "src",
+    ".d.ts"
+  ],
+  "exclude": ["node_modules", "dist"]
+}

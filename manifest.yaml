@@ -1,0 +1,112 @@
+# For reference: https://github.com/devrev/snap-in-docs/blob/main/references/manifest.md.
+# Refactor the code based on your business logic.
+
+version: "1"
+name: "AnalyzeAI "
+description: "Automate various tasks related to analyzing and processing data for insights"
+
+# This is the name displayed in DevRev where the Snap-In takes actions using the token of this service account.
+service_account:
+  display_name: DevRev Bot
+
+# Add any external connection, reference: https://github.com/devrev/snap-in-docs/blob/main/references/connections.md.
+
+# Add global values, reference: https://github.com/devrev/snap-in-docs/blob/main/references/manifest.md#globals.
+#globals:
+#  - name: sample_value
+#    description: Sample global value
+#    devrev_field_type: text
+#    is_required: true
+#    default_value: "primary"
+#    ui:
+#      display_name: Sample Value
+
+# Event source reference: https://github.com/devrev/snap-in-docs/blob/main/references/event_sources.md.
+event-sources:
+  - name: devrev-event-source
+    description: Event source listening on DevRev events.
+    display_name: DevRev events listener
+    type: devrev-webhook
+    config:
+      event_types:
+
+tags:
+  - name: bug
+    description: "This is a bug"
+  - name: feature_request
+    description: "This is a feature request"
+  - name: question
+    description: "This is a question"
+  - name: feedback
+    description: "This is a feedback"
+  - name: failed_to_infer_category
+    description: "Failed to infer category"
+
+
+commands:
+
+  - name: on_work_creation
+    namespace: devrev
+    description: Fetches reviews from Twitter and creates tickets
+    surfaces:
+      - surface: discussions
+        object_types:
+          - snap_in
+    usage_hint: "/on_work_creation [Fetches reviews from Twitter and creates tickets]"
+    function: on_work_creation
+
+  - name: trends
+    namespace: devrev
+    description: Fetches trends
+    surfaces:
+      - surface: discussions
+        object_types:
+          - snap_in
+    usage_hint: "/trends [Fetches trends. This function retrieves trending topics or patterns.]"
+    function: trends
+
+  - name: on_ticket_extracts
+    namespace: devrev
+    description: Fetches tickets
+    surfaces:
+      - surface: discussions
+        object_types:
+          - snap_in
+    usage_hint: "/on_ticket_extracts [Fetches tickets. Triggered when ticket extraction is needed, likely for further analysis or processing]"
+    function: on_ticket_extracts
+
+  - name: insights
+    namespace: devrev
+    description: Fetches insights
+    surfaces:
+      - surface: discussions
+        object_types:
+          - snap_in
+    usage_hint: "/insights [Fetches insights. This function gathers and provides insights, likely derived from analyzing data or trends.]"
+    function: insights
+# Functions reference: https://github.com/devrev/snap-in-docs/blob/main/references/functions.md.
+functions:
+  - name: on_work_creation
+    description: Fetches reviews from Twitter and creates tickets
+  - name: on_ticket_extracts
+    description: Fetches tickets. Triggered when ticket extraction is needed, likely for further analysis or processing
+  - name: insights
+    description: Fetches insights. This function gathers and provides insights, likely derived from analyzing data or trends.
+  - name: trends
+    description: Fetches trends. This function retrieves trending topics or patterns.
+  - name: snapKitBtn
+    description: Fetches trends. This function retrieves trending topics or patterns.
+snap_kit_actions:
+  - name: giphy
+    description: Snap kit action for showing gif created using `giphy` command
+    function: snapKitBtn
+  - name: embedding
+    description: Snap kit action for showing gif created using `giphy` command
+    function: snapKitBtn
+# Automations reference: https://github.com/devrev/snap-in-docs/blob/main/references/event_sources.md.
+automations:
+  - name: handle-work-created-event
+    source: devrev-event-source
+    event_types:
+      - work_created
+    function: on_work_creation
