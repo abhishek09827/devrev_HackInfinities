@@ -6,7 +6,7 @@ part of Snap-Ins.
 For more reference on Snap-Ins, please refer to the [documentation](https://github.com/devrev/snap-in-docs)
 # Analyze AI
 
-Analyze AI is a comprehensive tool designed to analyze and process data gathered from Instagram and Twitter, focusing on a specific organization, OpenAI. This tool provides various functionalities to extract insights, classify tweets, and analyze trends from social media data.
+Analyze AI is a comprehensive tool designed to analyze and process data gathered from various data source like Instagram and Twitter. This tool provides various functionalities to extract insights, classify tweets, and analyze trends from social media data.
 
 ## Features
 
@@ -15,7 +15,7 @@ Analyze AI is a comprehensive tool designed to analyze and process data gathered
 - *Intent Classification*: Identifies the urgency level of tweets, distinguishing between medium, urgent, and low priority inquiries or concerns.
 - *Insights Extraction*: Allows users to retrieve meaningful insights from tweets based on specified tags or categories.
 - *Trend Analysis*: Helps identify emerging topics or discussions within the Twitter and Instagram communities related to OpenAI.
-- *Tweet Lookup*: Enables targeted searches to gather information about specific topics, such as new features or product launches.
+- *Data Lookup*: Enables targeted searches to gather information about specific topics, such as new features or product launches.
 ### Getting started with the template
 1. Create a new repository from this template.
 2. In the new repository, you can add functions at path `src/functions` where the folder name corresponds to the function name in your manifest file.
