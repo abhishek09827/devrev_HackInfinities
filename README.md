@@ -6,15 +6,15 @@ part of Snap-Ins.
 For more reference on Snap-Ins, please refer to the [documentation](https://github.com/devrev/snap-in-docs)
 # Analyze AI
 
-Analyze AI is a comprehensive tool designed to analyze and process data gathered from various data source like Instagram and Twitter. This tool provides various functionalities to extract insights, classify tweets, and analyze trends from social media data.
+Analyze AI is a comprehensive tool designed to analyze and process data gathered from various data source like Instagram and Twitter. This tool provides various functionalities to extract insights, classify data, and analyze trends from social media data.
 
 ## Features
 
-- *Sentiment Analysis*: Categorizes tweets into positive, negative, or neutral sentiments to understand the overall mood surrounding OpenAI.
-- *Category Classification*: Assigns tweets into categories such as feature, bug, question, or answer, aiding in understanding the nature of discussions.
-- *Intent Classification*: Identifies the urgency level of tweets, distinguishing between medium, urgent, and low priority inquiries or concerns.
-- *Insights Extraction*: Allows users to retrieve meaningful insights from tweets based on specified tags or categories.
-- *Trend Analysis*: Helps identify emerging topics or discussions within the Twitter and Instagram communities related to OpenAI.
+- *Sentiment Analysis*: Categorizes data into positive, negative, or neutral sentiments to understand the overall mood.
+- *Category Classification*: Assigns data into categories such as feature, bug, question, or answer, aiding in understanding the nature of discussions.
+- *Intent Classification*: Identifies the urgency level of data, distinguishing between medium, urgent, and low priority inquiries or concerns.
+- *Insights Extraction*: Allows users to retrieve meaningful insights from data based on specified tags or categories.
+- *Trend Analysis*: Helps identify emerging topics or discussions within the data sources communities like Twitter and Instagram communities.
 - *Data Lookup*: Enables targeted searches to gather information about specific topics, such as new features or product launches.
 - *Dashboard*: https://devrev.streamlit.app/
 ### Getting started with the template
