@@ -10,13 +10,27 @@ Analyze AI is a comprehensive tool designed to analyze and process data gathered
 
 ## Features
 
-- *Sentiment Analysis*: Categorizes data into positive, negative, or neutral sentiments to understand the overall mood.
-- *Category Classification*: Assigns data into categories such as feature, bug, question, or answer, aiding in understanding the nature of discussions.
-- *Intent Classification*: Identifies the urgency level of data, distinguishing between medium, urgent, and low priority inquiries or concerns.
-- *Insights Extraction*: Allows users to retrieve meaningful insights from data based on specified tags or categories.
-- *Trend Analysis*: Helps identify emerging topics or discussions within the data sources communities like Twitter and Instagram communities.
+- *Sentiment Analysis*: Categorizes tweets into positive, negative, or neutral sentiments to understand the overall mood surrounding OpenAI.
+- *Category Classification*: Assigns tweets into categories such as feature, bug, question, or answer, aiding in understanding the nature of discussions.
+- *Intent Classification*: Identifies the urgency level of tweets, distinguishing between medium, urgent, and low priority inquiries or concerns.
+  ```bash
+   /on_works_created
+  ```
+- *Insights Extraction*: Allows users to retrieve meaningful insights from tweets based on specified tags or categories.
+     ```bash
+   /insights --tags="[Category]"
+     ```
+- *Trend Analysis*: Helps identify emerging topics or discussions within the Twitter and Instagram communities related to OpenAI.
+      ```bash
+   /trends
+      ```
 - *Data Lookup*: Enables targeted searches to gather information about specific topics, such as new features or product launches.
-- *Dashboard*: https://devrev.streamlit.app/
+      ```bash
+   /on_ticket_
+      ```
+
+  ### *Dashboard*: https://devrev.streamlit.app/
+
 ### Getting started with the template
 1. Create a new repository from this template.
 2. In the new repository, you can add functions at path `src/functions` where the folder name corresponds to the function name in your manifest file.
