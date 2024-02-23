@@ -1,10 +1,10 @@
-## DevRev Snaps TypeScript Template
+# Analyze AI
 
 This repository contains a template for the functions that can be deployed as
 part of Snap-Ins.
 
 For more reference on Snap-Ins, please refer to the [documentation](https://github.com/devrev/snap-in-docs)
-# Analyze AI
+
 
 Analyze AI is a comprehensive tool designed to analyze and process data gathered from various data source like Instagram and Twitter. This tool provides various functionalities to extract insights, classify data, and analyze trends from social media data.
 
