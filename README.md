@@ -16,6 +16,7 @@ Analyze AI is a comprehensive tool designed to analyze and process data gathered
 - *Insights Extraction*: Allows users to retrieve meaningful insights from tweets based on specified tags or categories.
 - *Trend Analysis*: Helps identify emerging topics or discussions within the Twitter and Instagram communities related to OpenAI.
 - *Data Lookup*: Enables targeted searches to gather information about specific topics, such as new features or product launches.
+- *Dashboard*: https://devrev.streamlit.app/
 ### Getting started with the template
 1. Create a new repository from this template.
 2. In the new repository, you can add functions at path `src/functions` where the folder name corresponds to the function name in your manifest file.
